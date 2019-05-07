@@ -1,6 +1,6 @@
 <?php
 
 //SITE GLOBAL CONFIGURATION
-$email = "yourmail@here.com";   //<-- Your email
+$email = "junglecowork@gmail.com";   //<-- Your email
 
 ?>
