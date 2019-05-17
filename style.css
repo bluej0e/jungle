@@ -459,8 +459,7 @@ h1.big-title
     cursor: pointer;
 }
 
-.grid
-{
+.grid{
     width: 800px;
     margin: 0 auto;
     overflow: hidden;
@@ -468,8 +467,7 @@ h1.big-title
     display: block;
 }
 
-.grid-item
-{
+.grid-item{
     float: left;
     font-size: 0;
     line-height: 0;
@@ -478,7 +476,6 @@ h1.big-title
     -webkit-box-sizing:border-box;
     transition: all 3s ease;
     overflow: hidden;
-
 }
 
 

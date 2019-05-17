@@ -213,8 +213,6 @@ var langBox = document.querySelector('.langBox');
 
 langBox.addEventListener('click', chosenLang());
 
-// chosenLang();
-
 function textFillEn(e){
   var textStuff = e.getAttribute('data-lang').split(".");
   var tempObj = langEng;
@@ -233,7 +231,6 @@ function textFillEs(e){
   }
   e.innerHTML = tempObj;
 };
-
 
 function chosenLang(){
   var curLang = langBox.getAttribute('lang');
