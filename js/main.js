@@ -52,7 +52,6 @@ jQuery(document).ready(function () {
           var $pageX = parseInt(e.pageX / $width, 10);
           var $pageY = parseInt(e.pageY / $height, 10);
           var $hueNum = ($pageX / ($pageX + $pageY ) * 130) + 30;
-          console.log($hueNum);
           jQuery("#home").css("filter", "hue-rotate("+ $hueNum +"deg)");
           jQuery(".top-circles").css("filter", "hue-rotate(-"+ $hueNum +"deg)");
       });

@@ -356,6 +356,9 @@ h1.big-title
 {
     display: inline-block;
     width: 335px;
+    vertical-align: top;
+    margin-bottom: 20px;
+
 }
 
 .service-holder img
@@ -474,6 +477,7 @@ h1.big-title
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     transition: all 3s ease;
+    overflow: hidden;
 
 }
 
@@ -559,6 +563,7 @@ h1.big-title
     padding: 30% 40%;
     color: white;
     background-color: rgba(0,0,0,0.9);
+    text-transform: uppercase;
 }
 
 .portfolio-sec-text
@@ -1858,4 +1863,8 @@ footer
     height: 58px;
     opacity: 0;
   }
+}
+
+.langBox{
+  float: right;
 }

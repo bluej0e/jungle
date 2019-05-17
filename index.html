@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="en">
     <head>
-        <title>Jungle - Coworking & Estudio</title>
+        <title data-lang='title'></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Espacio de coworking y estudio fotografico en Barcelona" />
         <meta name="keywords" content="Barcelona, Coworking, Cowork, Estudio, Fotografia, Internet, BCN, Marina, Cowork space, coworking space, estudio de fotografia, photography, photography studio, studio" />
@@ -36,7 +36,6 @@
         <table class="doc-loader">
             <tr>
                 <td>
-                  <!-- <div class="loader">Loading...</div> -->
                   <div class="lds-ripple"><div></div><div></div></div>
                 </td>
             </tr>
@@ -47,13 +46,16 @@
             <nav id="header-main-menu">
                 <div class="mob-menu">MENU</div>
                 <ul class="main-menu sm sm-clean">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#portfolio">Fotos</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <!-- <li><a href="#news">News</a></li> -->
-                    <li><a href="#planes">Planes</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#home" data-lang='navBar.home'></a></li>
+                    <li><a href="#about" data-lang='navBar.about'></a></li>
+                    <li><a href="#portfolio" data-lang='navBar.photos'></a></li>
+                    <li><a href="#services" data-lang='navBar.services'></a></li>
+                    <li><a href="#planes" data-lang='navBar.plans'></a></li>
+                    <li><a href="#contact" data-lang='navBar.contact'></a></li>
+                    <li onClick="chosenLang();" class="langBox" lang="en"><a data-lang='opLang' href="#">ss</a></li>
+                    <li style="float:right;"><a target="_blank" alt="Instagram" href="https://www.instagram.com/jungle.coworking.bcn"><span class="fa fa-instagram"></span></a></li>
+                    <li style="float:right;"><a target="_blank" alt="facebook" href="http://www.facebook.com/junglecoworkingbcn"><span class="fa fa-facebook"></span></a></li>
+                    <li style="float:right;"><a target="_blank" alt="WhatsApp" href="https://wa.me/34661107404?text=Hola"><span class="fa fa-whatsapp"></span></a></li>
                 </ul>
             </nav>
         </div>
@@ -73,24 +75,18 @@
                     <div class="section-num">
                         <span>01</span>
                     </div>
-                    <h2 class="entry-title">NOSOTROS</h2>
+                    <h2 class="entry-title" data-lang='navBar.about'></h2>
                 </div>
                 <div class="section-content-holder right">
                     <div class="content-wrapper">
-                        <div class="content-title-holder">
-                            <p class="content-title">ADN</p>
-                        </div>
+                      <center><h5 data-lang='about.t1'></h5></center>
                         <div class="one_half">
-                          <p>
-                            Somos un coworking y estudio de fotografía con terraza, zona de chill out y sala de reuniones. Bien equipados y ubicados, estamos a pie de calle en una de las zonas más céntricas, verdes y tranquilas de Barcelona, la Vila Olímpica, al lado de la ciutadela.
-                          </p>
+                          <p data-lang='about.t2'></p>
                         </div>
                         <div class="one_half last">
-                          <p>
-                            Jungle es un lugar donde puedes trabajar de lo que sea de forma cómoda, física y mentalmente. Decorado repleta de plantas y madera y con música ambiental, te hará sentir relajado y podrás trabajar a gusto. Estamos abiertos de 9h a 20h de lunes a viernes.
-                          </p>
+                          <p data-lang='about.t3'></p>
                         </div><div class="clear"></div>
-                      <h5><center>Tu primer dia te lo regalamos para que pruebes!<br>Ven a visitar JUNGLE.</center></h5>
+                        <center><h5 data-lang='about.t4'></h5></center>
                         <br>
                         <br>
                     </div>
@@ -113,7 +109,7 @@
                             <div class="clear"></div>
                         </div>
 
-                        <script>
+                        <!-- <script>
                             var team1_speed = "500";
                             var team1_auto = "false";
                             var team1_hover = "true";
@@ -166,7 +162,7 @@
                                 </ul>
                             </div>
                             <div class="clear"></div>
-                        </div>
+                        </div> -->
                     </div>   <!-- end full-width div -->
 
                 </div>
@@ -181,7 +177,7 @@
                     <div class="section-num">
                         <span>02</span>
                     </div>
-                    <h2 class="entry-title">Fotos</h2>
+                    <h2 class="entry-title" data-lang='navBar.photos'></h2>
                 </div>
                 <div class="section-content-holder portfolio-holder left">
                     <div class="grid" id="portfolio-grid">
@@ -191,7 +187,7 @@
                                 <img src="images/fotos/10.jpg" alt="">
                                 <div class="portfolio-text-holder">
                                     <div class="portfolio-text-wrapper">
-                                        <p class="portfolio-text">WELCOME TO THE JUNGLE</p>
+                                        <p class="portfolio-text" data-lang='fotos.fot1'></p>
                                         <!-- <p class="portfolio-sec-text">ver mas</p> -->
                                     </div>
                                 </div>
@@ -205,7 +201,7 @@
                                         <!-- <p class="portfolio-type">
                                           <img src="images/icon_post.svg" alt="">
                                         </p> -->
-                                        <p class="portfolio-text">ESPACIO DE COWORK</p>
+                                        <p class="portfolio-text" data-lang='fotos.fot2'></p>
                                         <!-- <p class="portfolio-sec-text">Smart Watch</p> -->
                                     </div>
                                 </div>
@@ -219,7 +215,7 @@
                                         <!-- <p class="portfolio-type">
                                             <img src="images/icon_post.svg" alt="">
                                         </p> -->
-                                        <p class="portfolio-text">FOTO ESTUDIO</p>
+                                        <p class="portfolio-text" data-lang='fotos.fot3'></p>
                                         <!-- <p class="portfolio-sec-text">Smart Watch</p> -->
                                     </div>
                                 </div>
@@ -233,7 +229,7 @@
                                         <!-- <p class="portfolio-type">
                                             <img src="images/icon_post.svg" alt="">
                                         </p> -->
-                                        <p class="portfolio-text">MAS IMAGENES</p>
+                                        <p class="portfolio-text" data-lang='fotos.fot4'></p>
                                         <!-- <p class="portfolio-sec-text">Smart Watch</p> -->
                                     </div>
                                 </div>
@@ -273,7 +269,7 @@
                     <div class="section-num">
                         <span>03</span>
                     </div>
-                    <h2 class="entry-title">Servicios</h2>
+                    <h2 class="entry-title" data-lang='navBar.services'></h2>
                 </div>
                 <div class="section-content-holder right">
                     <div class="content-wrapper">
@@ -290,75 +286,29 @@
                                     <div class="service-holder ">
                                         <img src="images/icon_01.png" alt="">
                                         <div class="service-content-holder">
-                                            <div class="service-title">COWORKING</div>
-                                            <div class="service-content">
-                                                Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                            </div>
+                                            <div class="service-title" data-lang='services.serv1.title'></div>
+                                            <div class="service-content" data-lang='services.serv1.text'><br /></div>
                                         </div>
                                     </div>
                                     <div class="service-holder ">
                                         <img src="images/icon_02.png" alt="">
                                         <div class="service-content-holder">
-                                            <div class="service-title">STUDIO</div>
-                                            <div class="service-content">
-                                                Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                            </div>
+                                            <div class="service-title" data-lang='services.serv2.title'></div>
+                                            <div class="service-content" data-lang='services.serv2.text'><br /></div>
                                         </div>
                                     </div>
                                     <div class="service-holder ">
                                         <img src="images/icon_03.png" alt="">
                                         <div class="service-content-holder">
-                                            <div class="service-title">CHILLZONE</div>
-                                            <div class="service-content">
-                                                Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
-                                            </div>
+                                            <div class="service-title" data-lang='services.serv3.title'></div>
+                                            <div class="service-content" data-lang='services.serv3.text'><br /></div>
                                         </div>
                                     </div>
                                     <div class="service-holder ">
                                         <img src="images/icon_04.png" alt="">
                                         <div class="service-content-holder">
-                                            <div class="service-title">GRAPHIC</div>
-                                            <div class="service-content">
-                                                Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="service-holder ">
-                                        <img src="images/icon_03.png" alt="">
-                                        <div class="service-content-holder">
-                                            <div class="service-title">UBICACION</div>
-                                            <div class="service-content">
-                                                Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-holder ">
-                                        <img src="images/icon_04.png" alt="">
-                                        <div class="service-content-holder">
-                                            <div class="service-title">COFFEE</div>
-                                            <div class="service-content">
-                                                Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.<br />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-holder ">
-                                        <img src="images/icon_02.png" alt="">
-                                        <div class="service-content-holder">
-                                            <div class="service-title">WIFI</div>
-                                            <div class="service-content">
-                                                Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.<br />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-holder ">
-                                        <img src="images/icon_01.png" alt="">
-                                        <div class="service-content-holder">
-                                            <div class="service-title">GREEN SPACE</div>
-                                            <div class="service-content">
-                                                Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.<br />
-                                            </div>
+                                            <div class="service-title" data-lang='services.serv4.title'></div>
+                                            <div class="service-content" data-lang='services.serv4.text'><br /></div>
                                         </div>
                                     </div>
                                 </li>
@@ -371,136 +321,6 @@
             </div>
         </div>
 
-        <!-- News - ->
-        <div id="news" class="section">
-            <div class="block content-1170 center-relative">
-                <div class="section-title-holder right">
-                    <div class="section-num">
-                        <span>
-                            04
-                        </span>
-                    </div>
-                    <h2 class="entry-title">HISTORIAS</h2>
-                </div>
-                <div class="section-content-holder left">
-                    <div class="content-wrapper">
-                        <div class="blog-holder block center-relative">
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">01</div>
-                                <div class="info">
-                                    <div class="author vcard ">Robert Williams</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">BRANDING</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">02</div>
-                                <div class="info">
-                                    <div class="author vcard ">Jim Davis</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">TECH</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Incididunt ut dolore magna labore eiusmod lorem ipsum dolor sit</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">03</div>
-                                <div class="info">
-                                    <div class="author vcard ">Ann Peterson</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">CRAFTING</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Labore eiusmod lorem ipsum dolor sit amet nunc labore incididunt ut dolore</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <article class="relative blog-item-holder center-relative">
-                                <div class="num">04</div>
-                                <div class="info">
-                                    <div class="author vcard ">Robert Williams</div>
-                                    <div class="cat-links">
-                                        <ul>
-                                            <li><a href="#">CRAFTING</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h3 class="entry-title">
-                                    <a href="#">Dolor sit amet nunc labore incididunt ut dolore magna labore eiusmod</a>
-                                </h3>
-                                <div class="clear"></div>
-                            </article>
-
-                            <div class="latest-post-bottom-text">
-                                <a href="#">GO TO BLOG</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-
-            <div class="block content-1170 center-relative">
-                <div class="extra-content-left">
-                    <script> var text1_speed = "500";
-                        var text1_auto = "false";
-                        var text1_hover = "true";
-                    </script>
-                    <div class="text1 testimonial-slider-holder slider-holder">
-                        <div class="caroufredsel_wrapper">
-                            <ul id="text1" class="slides testimonial">
-                                <li>
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">The difference between a Designer and Developer, when it comes to design skills, is the difference between shooting a bullet and throwing it.</p>
-                                        <p class="testimonial-author">SCOTT HANSELMAN</p>
-                                    </div>
-                                    <div class="clear">
-                                    </div>
-                                </li>
-                                <li style="width: 500px;">
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">To create anything–whether a short story or a magazine profile or a film or a sitcom–is to believe, if only momentarily, you are capable of magic.</p>
-                                        <p class="testimonial-author">TOM BISSEL</p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-                                <li>
-                                    <div class="testimonial-content">
-                                        <p class="testimonial-text">As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.</p>
-                                        <p class="testimonial-author">STEVEN HELLER</p>
-                                    </div>
-                                    <div class="clear"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <a id="text1_next" class="carousel_text_next" href="#"></a>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div -->
-
-
         <!-- Plans -->
         <div id="planes" class="section">
             <div class="block content-1170 center-relative">
@@ -510,7 +330,7 @@
                             04
                         </span>
                     </div>
-                    <h2 class="entry-title">PLANES</h2>
+                    <h2 class="entry-title" data-lang='navBar.plans'></h2>
                 </div>
                 <div class="section-content-holder left">
                     <div class="content-wrapper">
@@ -519,91 +339,49 @@
                         </div> -->
                         <div class="one_half ">
                           <div class="offer_box">
-                            <img src="images/animals/snail.svg" />
-                            <h3>Plan Caracol</h3>
-                            <p>some textual description would go here instead of this very outdrawn text that i've created.</p>
+                            <img src="images/animals/frog1.svg" />
+                            <h3 data-lang='plans.plan1.name'></h3>
+                            <p data-lang='plans.plan1.text'></p>
+                            <p data-lang='plans.plan1.text2'></p>
+                            <p data-lang='plans.plan1.text3'></p>
                             <ul>
-                              <li>Incluye:</li>
-                              <li>area de coworking</li>
-                              <li>sala de reuniones</li>
-                              <li>sala relax y patio</li>
-                              <li>wi-fi, cafe, musica</li>
-                              <li>10€<span> 1 día</span></li>
+                              <li data-lang='plans.plan1.price'></li>
                             </ul>
                           </div>
                         </div>
                         <div class="one_half last ">
-                          <div class="offer_box">
-                            <img src="images/animals/frog1.svg" />
-                            <h3>Plan Rana</h3>
-                            <p>some textual description would go here instead of this very outdrawn text that i've created.</p>
-                            <ul>
-                              <li>Incluye:</li>
-                              <li>Uso del espacio coworking</li>
-                              <li>Accesso a sala de reuniones</li>
-                              <li>Sala relax y patio</li>
-                              <li>Wi-Fi, cafe, musica</li>
-                              <li>100€<span> 15 días</span></li>
-                            </ul>
-                          </div>
-                        </div><div class="clear"></div>
-                        <div class="one_half ">
                           <div class="offer_box">
                             <img src="images/animals/monkey1.svg" />
-                            <h3>Plan Mono</h3>
-                            <p>some textual description would go here instead of this very outdrawn text that i've created.</p>
+                            <h3 data-lang='plans.plan2.name'></h3>
+                            <p data-lang='plans.plan2.text'></p>
+                            <p data-lang='plans.plan2.text2'></p>
+                            <p data-lang='plans.plan2.text3'></p>
                             <ul>
-                              <li>Incluye:</li>
-                              <li>area de coworking</li>
-                              <li>sala de reuniones</li>
-                              <li>sala relax y patio</li>
-                              <li>wi-fi, cafe, musica</li>
-                              <li>180€<span> 1 mes</span></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="one_half last ">
-                          <div class="offer_box">
-                            <img src="images/animals/tiger.svg" />
-                            <h3>Plan Tigre</h3>
-                            <p>some textual description would go here instead of this very outdrawn text that i've created.</p>
-                            <ul>
-                              <li>Incluye:</li>
-                              <li>Uso del espacio coworking</li>
-                              <li>Accesso a sala de reuniones</li>
-                              <li>Sala relax y patio</li>
-                              <li>Wi-Fi, cafe, musica</li>
-                              <li>450€<span> 3 meses</span></li>
+                              <li data-lang='plans.plan2.price'></li>
                             </ul>
                           </div>
                         </div><div class="clear"></div>
                         <div class="one_half ">
                           <div class="offer_box">
-                            <img src="images/animals/monkey.svg" />
-                            <h3>Plan Gorila</h3>
-                            <p>some textual description would go here instead of this very outdrawn text that i've created.</p>
+                            <img src="images/animals/tiger.svg" />
+                            <h3 data-lang='plans.plan3.name'></h3>
+                            <p data-lang='plans.plan3.text'></p>
+                            <p data-lang='plans.plan3.text2'></p>
+                            <p data-lang='plans.plan3.text3'></p>
                             <ul>
-                              <li>Incluye:</li>
-                              <li>area de coworking</li>
-                              <li>sala de reuniones</li>
-                              <li>sala relax y patio</li>
-                              <li>wi-fi, cafe, musica</li>
-                              <li>700€<span> 6 meses</span></li>
+                              <li data-lang='plans.plan3.price'></li>
                             </ul>
                           </div>
                         </div>
                         <div class="one_half last ">
                           <div class="offer_box">
-                            <img src="images/animals/owl.svg" />
-                            <h3>Plan Buho</h3>
-                            <p>some textual description would go here instead of this very outdrawn text that i've created.</p>
+                            <img src="images/animals/monkey.svg" />
+                            <h3 data-lang='plans.plan4.name'></h3>
+                            <p data-lang='plans.plan4.text'></p>
+                            <p data-lang='plans.plan4.text2'></p>
+                            <p data-lang='plans.plan4.text3'></p>
                             <ul>
-                              <li>Incluye:</li>
-                              <li>Uso del espacio coworking</li>
-                              <li>Accesso a sala de reuniones</li>
-                              <li>Sala relax y patio</li>
-                              <li>Wi-Fi, cafe, musica</li>
-                              <li>1200€<span> 1 año</span></li>
+                              <li data-lang='plans.plan4.price'></li>
                             </ul>
                           </div>
                         </div><div class="clear"></div>
@@ -662,7 +440,7 @@
                             </li>
                             <li class="fw-slide">
                                 <img src="images/wifi.svg" alt="">
-                                <p class="fw-slide-text">Co-pado</p>
+                                <p class="fw-slide-text">Co-vered</p>
                             </li>
                         </ul>
                     </div>
@@ -676,7 +454,6 @@
         </div>
 
         <!-- Contact -->
-
         <div id="contact" class="section">
             <div class="block content-1170 center-relative">
                 <div class="section-title-holder left">
@@ -685,22 +462,22 @@
                             05
                         </span>
                     </div>
-                    <h2 class="entry-title">Contacto</h2>
+                    <h2 class="entry-title" data-lang='navBar.contact'></h2>
                 </div>
                 <div class="section-content-holder right">
                     <div class="content-wrapper">
                         <div class="one_half ">
-                            <p>Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.</p>
+                            <p data-lang='contact.t1'></p>
                             <br>
-                            <p><strong><span style="color: #005372;">Incididunt ut dolore</span></strong> magna labore eiusmod. Dolor sit amet consectetur est adipisicing elit, sed do eiusmod.</p>
+                            <p data-lang='contact.t2'></p>
                         </div>
                         <div class="one_half last">
                             <div class="contact-form">
-                                <p><input id="name" type="text" name="your-name" placeholder="Nombre"></p>
+                                <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
                                 <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
-                                <p><input id="subject" type="text" name="your-subject" placeholder="Subjeto"></p>
-                                <p><textarea id="message" name="your-message" placeholder="Mensaje"></textarea></p>
-                                <p><input type="submit" onClick="SendMail()" value="ENVIAR"></p>
+                                <p><input id="subject" type="text" name="your-subject" placeholder="Sub"></p>
+                                <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
+                                <p><input type="submit" onClick="SendMail()" value="SEND"></p>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -717,18 +494,23 @@
         <footer>
             <div class="footer content-1170 center-relative">
                 <ul>
-                    <li class="copyright-footer">
-                        © 2019 All rights reserved.</a>
-                    </li>
-                    <li class="social-footer">
-                        <a href="https://www.instagram.com/jungle.coworking.bcn"><span class="fa fa-instagram"></span></a>
-                        <a href="http://www.facebook.com/junglecoworkingbcn"><span class="fa fa-facebook"></span></a>
-                    </li>
+                  <li class="copyright-footer">
+                    Carrer Marina 68, 08005, Barcelona, Spain
+                  </li>
+                  <li class="copyright-footer">
+                      © <script type='text/javascript'>document.write(new Date().getFullYear());</script> All rights reserved.
+                  </li>
+                  <li class="social-footer">
+                      <a alt="Instagram" href="https://www.instagram.com/jungle.coworking.bcn"><span class="fa fa-instagram"></span></a>
+                      <a alt="facebook" href="http://www.facebook.com/junglecoworkingbcn"><span class="fa fa-facebook"></span></a>
+                      <a alt="WhatsApp" href="https://wa.me/34661107404?text=Hola"><span class="fa fa-whatsapp"></span></a>
+                  </li>
                 </ul>
             </div>
         </footer>
 
         <!--Load JavaScript-->
+        <script type='text/javascript' src='js/texts.js'></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type='text/javascript' src='js/jquery.sticky-kit.min.js'></script>
         <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
