@@ -13,7 +13,7 @@ const langEng = {
   },
   about: {
     t1: "Welcome to Jungle!",
-    t2: "We are a coworking and photography studio with terrace, chill out area and meeting room.",
+    t2: "We are a coworking and photography studio with a ciclorama, terrace, chill out area and meeting room. With our very organic and relaxing decoration, full of plants, wood and good vibes you’ll feel right at home.",
     t3: "We are located in one of the most central, green and quiet areas of Barcelona, the Vila Olimpica, right next to the Parc Ciutadella and the beach, and a quick 10 minute walk from the city center.",
     t4: "Jungle is a place where you'll be able to work in comfertably, physically and mentally.",
     people: {
@@ -119,7 +119,7 @@ const langEsp = {
   },
   about: {
     t1: "¡Bienvenido a Jungle!",
-    t2: "Somos un coworking y estudio de fotografía. Con terraza, área chill out y sala de reuniones.",
+    t2: "Somos un coworking y estudio de fotografía., con ciclorama, terraza, área chill out y sala de reuniones. La decoración es muy orgánica y relajante, llena de plantas, madera y buen rollo, y eso es lo que nos distingue.",
     t3: "Estamos ubicados en una de las zonas más céntricas, verdes y tranquilas de Barcelona, la Vila Olímpica, justo al lado del Parc Ciutadella y la playa, ya 10 minutos a pie del centro de la ciudad.",
     t4: "Jungle es un lugar donde podrás trabajar cómodamente, física y mentalmente.",
     people: {
@@ -222,6 +222,7 @@ function textFillEn(e){
   }
   e.innerHTML = tempObj;
 };
+
 function textFillEs(e){
   var textStuff = e.getAttribute('data-lang').split(".");
   var tempObj = langEsp;

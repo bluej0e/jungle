@@ -1589,6 +1589,17 @@ footer
         display: block !important;
     }
 }
+.langBox{
+  float: right;
+}
+
+.socialTop{
+  float: right;
+}
+.socialHold{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 @media screen and (max-width: 925px) {
 
@@ -1681,7 +1692,14 @@ footer
         display: none !important;
     }
 
+    .socialTop{
+      float: none;
+      margin: 0px 10px !important;
 
+    }
+    .langBox{
+      float: none;
+    }
 }
 
 @media screen and (max-width: 805px) {
@@ -1785,7 +1803,7 @@ footer
 .offer_box p{
   margin: 5px 10px 15px 10px;
   font-size: 1.126em;
-  text-align: justify;
+  text-align: left;
 }
 
 .offer_box ul li{
@@ -1860,8 +1878,4 @@ footer
     height: 58px;
     opacity: 0;
   }
-}
-
-.langBox{
-  float: right;
 }
