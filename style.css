@@ -259,18 +259,18 @@ body a:hover
 
 .intro-page
 {
-    padding-bottom: 170px;
-    min-height: calc(100vh - 170px);
-    background-color: #122d2e;
-    background-image:url(images/background_img.jpg);
-    background-repeat: repeat;
-    background-position: center top;
-    background-size: cover;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  padding-bottom: 170px;
+  min-height: calc(100vh - 170px);
+  background-color: #122d2e;
+  background-image:url(images/background_img.png);
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top-circles {

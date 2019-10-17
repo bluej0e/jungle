@@ -15,7 +15,7 @@ const langEng = {
     t1: "Welcome to Jungle!",
     t2: "We are a coworking and photography studio with a ciclorama, terrace, chill out area and meeting room. With our very organic and relaxing decoration, full of plants, wood and good vibes you’ll feel right at home.",
     t3: "We are located in one of the most central, green and quiet areas of Barcelona, the Vila Olimpica, right next to the Parc Ciutadella and the beach, and a quick 10 minute walk from the city center.",
-    t4: "Jungle is a place where you'll be able to work in comfertably, physically and mentally.",
+    t4: "Jungle is a place where you'll be able to work in comfortably, physically and mentally.",
     people: {
       p1: {
         name: "Ricardo Leal",
@@ -39,7 +39,7 @@ const langEng = {
     },
     serv2: {
       title: "Studio",
-      text: "The studio have a ciclorama with 50 m2 , studio lights, tripods and everything that you need for good captures.",
+      text: "The studio has a ciclorama with 50 m2 , studio lights, tripods and everything that you need for good captures.",
       ico: ""
     },
     serv3: {
