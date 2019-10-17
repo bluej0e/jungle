@@ -1,6 +1,6 @@
 <?php
 
 //SITE GLOBAL CONFIGURATION
-$email = "junglecowork@gmail.com";   //<-- Your email
+$email = "info@junglecoworking.es";   //<-- Your email
 
 ?>
