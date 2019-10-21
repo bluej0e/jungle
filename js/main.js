@@ -11,6 +11,17 @@ jQuery(document).ready(function () {
     });
 
 
+    //home saturation
+    // jQuery('#home').mousemove(function(e){
+    //     var $width = jQuery("#home").width()/130;
+    //     var $height = jQuery("#home").height()/130;
+    //     var $pageX = parseInt(e.pageX / $width, 10);
+    //     var $pageY = parseInt(e.pageY / $height, 10);
+    //     var $hueNum = ($pageX / ($pageX + $pageY ) * 130) + 30;
+    //     jQuery("#home").css("filter", "hue-rotate("+ $hueNum +"deg)");
+    //     jQuery(".top-circles").css("filter", "hue-rotate(-"+ $hueNum +"deg)");
+    // });
+
     //Placeholder show/hide
     jQuery('input, textarea').focus(function () {
         jQuery(this).data('placeholder', jQuery(this).attr('placeholder'));
@@ -44,21 +55,34 @@ jQuery(document).ready(function () {
     });
 
 
-      //home saturation
+    //Calendar
+    var calbutt = jQuery(".calbutt");
+    var caltogg = jQuery("#caltoggler");
+    // var calp = jQuery(".cal")
 
-      jQuery('#home').mousemove(function(e){
-          var $width = jQuery("#home").width()/130;
-          var $height = jQuery("#home").height()/130;
-          var $pageX = parseInt(e.pageX / $width, 10);
-          var $pageY = parseInt(e.pageY / $height, 10);
-          var $hueNum = ($pageX / ($pageX + $pageY ) * 130) + 30;
-          jQuery("#home").css("filter", "hue-rotate("+ $hueNum +"deg)");
-          jQuery(".top-circles").css("filter", "hue-rotate(-"+ $hueNum +"deg)");
-      });
+    caltogg.click( function(){
+      console.log('caltogg has been clicked');
+      if (calbutt.hasClass('activity')) {
+        calbutt.removeClass('activity');
+        calbutt.addClass('disability');
+      } else {
+        calbutt.addClass('activity');
+        calbutt.removeClass('disability');
+      }
+    });
 
-
-
+    jQuery(document).mouseup(function(e) {
+      if (calbutt.hasClass('activity'))
+      {
+        calbutt.addClass('disability');
+        setTimeout(function(){
+          calbutt.removeClass('activity');
+        }, 300);
+      }
+    });
 });
+
+
 
 
 jQuery(window).load(function () {
@@ -291,7 +315,6 @@ jQuery(window).load(function () {
     jQuery('.doc-loader').fadeOut('fast');
 });
 
-
 jQuery(window).resize(function () {
 
     //Show-Hide Mobile Menu
@@ -323,6 +346,9 @@ jQuery(window).resize(function () {
         jQuery(this).find('.portfolio-text-wrapper').css('margin-top', (jQuery(this).height() - jQuery(this).find('.portfolio-text-wrapper').height()) / 2 - 70);
     });
 });
+
+
+
 //------------------------------------------------------------------------
 //Helper Methods -->
 //------------------------------------------------------------------------

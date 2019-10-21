@@ -27,6 +27,15 @@
                 <script src="js/html5.js"></script>
         <![endif]-->
 
+<!--
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+  <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/rv-rodrigo-viola/60min?hide_event_type_details=1', text: 'Book', color: '#00a2ff', textColor: '#ffffff', branding: false });</script>
+
+<style>.booking-layout{
+  background-color: transparent!important;
+}</style> -->
+
     </head>
     <body>
 
@@ -486,29 +495,43 @@
 
         <!-- Footer -->
         <footer>
-            <div class="footer content-1170 center-relative">
-                <ul>
-                  <li class="copyright-footer">
-                    Carrer Marina 68, 08005, Barcelona, Spain
-                  </li>
-                  <li class="copyright-footer">
-                      © <script type='text/javascript'>document.write(new Date().getFullYear());</script> All rights reserved.
-                  </li>
-                  <li class="social-footer">
-                    <a alt="Instagram" href="https://www.instagram.com/jungle.coworking.bcn"><span class="fa fa-instagram"></span></a>
-                    <a alt="Facebook" href="https://www.facebook.com/junglecoworkingbcn"><span class="fa fa-facebook"></span></a>
-                    <a alt="WhatsApp" href="https://wa.me/34661107404?text=Hola"><span class="fa fa-whatsapp"></span></a>
-                  </li>
-                  <li>
-                    <a onClick="chosenLang();" class="langBoxB" lang="en" data-lang='opLang' href="#">ss</a>
-                  </li>
-                </ul>
-            </div>
+          <div class="footer content-1170 center-relative">
+            <ul>
+              <li class="copyright-footer">
+                Carrer Marina 68, 08005, Barcelona, Spain
+              </li>
+              <li class="copyright-footer">
+                  © <script type='text/javascript'>document.write(new Date().getFullYear());</script> All rights reserved.
+              </li>
+              <li class="social-footer">
+                <a alt="Instagram" href="https://www.instagram.com/jungle.coworking.bcn"><span class="fa fa-instagram"></span></a>
+                <a alt="Facebook" href="https://www.facebook.com/junglecoworkingbcn"><span class="fa fa-facebook"></span></a>
+                <a alt="WhatsApp" href="https://wa.me/34661107404?text=Hola"><span class="fa fa-whatsapp"></span></a>
+              </li>
+              <li>
+                <a onClick="chosenLang();" class="langBoxB" lang="en" data-lang='opLang' href="#">ss</a>
+              </li>
+            </ul>
+          </div>
         </footer>
+
+        <div class="calendarButtons">
+          <button id="caltoggler"><p>Reserva la sala</p><span class="fa fa-calendar"></span></button>
+          <button id="butt1" class="calbutt disability" onclick="Calendly.showPopupWidget('https://calendly.com/junglecoworking/15min');return false;"><p>Reunion de</p><span>15</span><p>min</p></button>
+          <button id="butt2" class="calbutt disability" onclick="Calendly.showPopupWidget('https://calendly.com/junglecoworking/30min');return false;"><p>Reunion de</p><span>30</span><p>min</p></button>
+          <button id="butt3" class="calbutt disability" onclick="Calendly.showPopupWidget('https://calendly.com/junglecoworking/60min');return false;"><p>Reunion de</p><span>60</span><p>min</p></button>
+          <button id="butt4" class="calbutt disability" onclick="Calendly.showPopupWidget('https://calendly.com/junglecoworking/reunion-90-minutos');return false;"><p>Reunion de</p><span>90</span><p>min</p></button>
+        </div>
+
+        <!-- Calendly link widget begin -->
+        <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+        <!-- Calendly link widget end -->
 
         <!--Load JavaScript-->
         <script type='text/javascript' src='js/texts.js'></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type='text/javascript' src='js/jquery.sticky-kit.min.js'></script>
         <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
         <script type='text/javascript' src='js/jquery.sticky.js'></script>

@@ -19,6 +19,7 @@ body a:hover
     color: #ed7957;
 }
 
+
 .doc-loader
 {
     position: fixed;
@@ -1878,4 +1879,102 @@ footer
     height: 58px;
     opacity: 0;
   }
+}
+
+
+/** Calendar Button **/
+.calendarButtons{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  z-index: 999;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  transition: all .3s ease-in-out;
+}
+.calendarButtons button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 25px;
+  border-color: transparent;
+  height: 50px;
+  width: 50px;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all .3s ease-in-out;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.calendarButtons button span{
+  margin: 0 2px;
+  display: flex;
+}
+.calendarButtons button p{
+  opacity: 0;
+  display: none;
+  transition: all .3s ease-in-out;
+  word-wrap: break-word;
+}
+.calendarButtons button:hover{
+  background-color: #a00037;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 0 10px;
+  width: 160px;
+  transition: all .3s ease-in-out;
+}
+.calendarButtons button:hover > p{
+  display: flex;
+  opacity: 1;
+  margin: 0 3px;
+  flex-direction: row;
+  justify-content: flex-end;
+  transition: all .3s ease-in-out;
+}
+.calendarButtons button:focus{
+  outline: none;
+  border: none;
+}
+.activity{
+  pointer-events: auto;
+  opacity: 1;
+}
+.disability{
+  opacity: 0;
+  pointer-events: none;
+}
+#butt1:hover{
+  background-color: #23214c;
+}
+#butt2:hover{
+  background-color: #ed7957;
+}
+#butt3:hover{
+  background-color: #319677;
+}
+#butt4:hover{
+  background-color: #005372;
+}
+#caltoggler{
+  opacity: 1;
+  pointer-events: auto!important;
+}
+#caltoggler span{
+  flex-flow: row-reverse;
+  display: flex;
+}
+#caltoggler .fa{
+  margin:0 3px;
+}
+#caltoggler:hover{
+  width: 150px;
 }
