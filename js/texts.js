@@ -101,6 +101,11 @@ const langEng = {
       message: "Message",
       send: "Send"
     }
+  },
+  calbutt: {
+    main: "Book meeting room",
+    a: "",
+    b: "minute reunion"
   }
 };
 
@@ -206,6 +211,11 @@ const langEsp = {
       message: "Mensaje",
       send: "Enviar"
     }
+  },
+  calbutt: {
+    main: "Reserva la sala",
+    a: "Reunion de",
+    b: "min"
   }
 };
 
