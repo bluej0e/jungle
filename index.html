@@ -476,11 +476,36 @@
                         </div>
                         <div class="one_half last">
                             <div class="contact-form">
-                                <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
-                                <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
-                                <p><input id="subject" type="text" name="your-subject" placeholder="Sub"></p>
-                                <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
-                                <p><input type="submit" onClick="SendMail()" value="SEND"></p>
+                                <form role="form"  method="POST" name="contact">
+						            <div class="form-group">
+						              <input id="name" type="text" name="name" class="form-control" id="contact-name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor llene el campo" >
+						              <div class="validate"></div>
+						            </div>
+						            <div class="form-group">
+						              <input type="email" name="email" id="contact-email" class="form-control" id="contact-email" placeholder="Email" data-rule="email" data-msg="Email invalido">
+						              <div class="validate"></div>
+						            </div>
+						            <div class="form-group">
+						              <input type="text" name="subject" id="subject" class="form-control" id="contact-subject" placeholder="Subjeto" data-rule="minlen:4" data-msg="Subjeto vacio">
+						              <div class="validate"></div>
+						            </div>
+
+						            <div class="form-group">
+						              <textarea class="form-control" name="message" id="message" placeholder="Mensaje" rows="5" data-rule="required" data-msg="Escribanos algo!"></textarea>
+						              <div class="validate"></div>
+						            </div>
+
+						            <div class="loading"></div>
+						            <div class="error-message"></div>
+						            <!-- <div class="sent-message">Tu mensaje ha sido enviado, gracias!</div> -->
+
+						            <div class="form-send">
+                                	<input type="submit" onClick="SendMail()" value="SEND">
+						            </div>
+						          </form>
+
+
+
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -500,8 +525,11 @@
               <li class="copyright-footer">
                 Carrer Marina 68, 08005, Barcelona, Spain
               </li>
-              <li class="copyright-footer">
+               <li class="copyright-footer">
                   © <script type='text/javascript'>document.write(new Date().getFullYear());</script> All rights reserved.
+              </li>
+              <li>
+              	Website created by <a target="_blank" href="https://www.rankingonline.es">Ranking Online</a>
               </li>
               <li class="social-footer">
                 <a alt="Instagram" href="https://www.instagram.com/jungle.coworking.bcn"><span class="fa fa-instagram"></span></a>
